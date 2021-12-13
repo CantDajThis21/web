@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction to Web Design</title>
+</head>
+
+<button id="btnScrollToTop">
+    <i class="material-icons">keyboard_arrow_up</i>
+</button>
+<script>
+    const btnScrollToTop = document.querySelector("#btnScrollToTop")
+        btnScrollToTop.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            })
+    });
+</script>
+<style>
+    #btnScrollToTop{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #c0c0c0;
+        box-shadow: 0 0 10px; rgba(0, 0, 0, 0.25);
+        color: #ffffff;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+    #btnScrollToTop:active{
+        background: #000000;
+    }
+</style>
+<body>
+
+    <div id="slideout-menu">
+        <ul> 
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
+            </ul>
+    </div>
+    <nav>
+        <div id="logo-img">
+            <a href = "#">
+                <img src = "Images/Computer Studies (1).png" alt="Computer Studies Logo">
+            </a>
+        </div>
+        <div id="menuicons">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+            <ul> 
+            <li>
+                <a class="active" href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html">Projects</a>
+            </li>
+            <li>
+                <a href="index.html">About us</a>
+            </li>
+            </ul>
+
+    </nav>
+
+    <div id="banner">
+        <h1>Web Design and Visualization</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua.</h3>
+    </div>
+
+
+    <main>
+        <a href ="#">
+            <h2 class="section-heading">Sample Scrapey Systems</h2>
+        </a>
+        <section>
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <img src="Images/3.jpg" alt="Card Image">
+                    </a>
+                </div>
+
+                <div class="card-description">
+                    <a>
+                        <h3>Movie Scraping System</h3>
+                    </a>
+                    <p>
+                        Learn the hidden ways of the Firefox! Indulge yourself in last years highlights and events! Jampacked with fun and excitement!  
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <img src="Images/3.jpg" alt="Card Image">
+                    </a>
+                </div>
+
+                <div class="card-description">
+                    <a>
+                        <h3>Weather Forecast Scraping System</h3>
+                    </a>
+                    <p>
+                        Learn the hidden ways of the Firefox! Indulge yourself in last years highlights and events! Jampacked with fun and excitement!  
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <img src="Images/4.jpg" alt="Card Image">
+                    </a>
+                </div>
+
+                <div class="card-description">
+                    <a>
+                        <h3>E - Commerce Scraping System</h3>
+                    </a>
+                    <p>
+                        Take a look back into last years University Days, 
+                        as we reminisce the celebration of the 118th URIAN Games!
+                        Where programs are pitted against each other to achieve glory 
+                        and recognition!
+                    </p>
+                </div>
+            </div>
+            
+        <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                <p>
+                    <Ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                    </Ul>
+                </p>
+            </div>
+
+            <div id="right-footer">
+                <h3>Follow us on</h3>
+                <div id="social-media-footer">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/TheCollegehumor", target="_blank">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/TheCollegehumor", target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/TheCollegehumor", target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/TheCollegehumor", target="_blank">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    This website is developed by Team Juriel
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
